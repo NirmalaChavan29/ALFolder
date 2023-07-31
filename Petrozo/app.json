@@ -1,0 +1,45 @@
+{
+  "id": "c07e0707-1f53-491f-9db7-6e2f76a7748d",
+  "name": "Petrozo",
+  "publisher": "Default publisher",
+  "version": "1.0.0.2",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "7bed4fbb-82a6-44af-9cd8-e11b067cca82",
+      "name": "Robo Energy 365",
+      "publisher": "Robosoft Solutions DMCC",
+      "version": "17.0.0.16"
+    },
+    {
+      "id": "571a9237-0c7e-4f9d-b9a8-1e09e2076be5",
+      "name": "PetrozoReportExt",
+      "publisher": "Robo Soft DMCC",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 59000,
+      "to": 90149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "9.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

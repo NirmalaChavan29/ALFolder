@@ -1,0 +1,38 @@
+{
+  "id": "1ee47c4b-83c2-4e67-9698-d44593bf2025",
+  "name": "ChallanReport",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [{
+    "appId": "db643212-b7fb-4dd4-b5a8-cb44ac714461",
+    "name": "India GST",
+    "publisher": "Microsoft",
+    "version": "22.2.56969.58006"}
+
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "9.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

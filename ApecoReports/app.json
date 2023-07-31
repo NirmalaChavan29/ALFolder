@@ -1,0 +1,36 @@
+{
+  "id": "742b672f-c6c6-4c32-8006-5ad19a4bdcf2",
+  "name": "ApecoReports",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [{
+    "appId": "d0754fee-e59b-4688-8ec7-5f28c97aabe8",
+    "name": "APeCOReportExtsion",
+    "publisher": "Robosoft",
+    "version": "1.0.0.0"}],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "9.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
