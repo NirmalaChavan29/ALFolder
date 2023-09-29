@@ -1,7 +1,8 @@
 codeunit 50100 "Email Integration"
 {
-    procedure EmailRFQAttachment(PurchHeader: Record "Purch. Inv. Header")
+    procedure EmailRFQAttachment(Cust: Record Customer)
     var
+        Cust1: Record Customer;
         Vendor: Record 23;
         PurchHdr: Record "Purch. Inv. Header";
         Subject: Text[100];
@@ -10,32 +11,32 @@ codeunit 50100 "Email Integration"
         AttachementOutstream: OutStream;
         FileMgt: Codeunit "File Management";
         recPurchref: RecordRef;
-        repRequestForQuote: Report 406;
+        repRequestForQuote: Report 101;
         //new
         MailSent: Boolean;
         FilePath: Text;
     //PurchaseInvoiceHeaderEdit: Codeunit 50002;
     begin
-        if PurchHeader."Email sent" = true then
+        if Cust."Email sent" = true then
             Error('Mail has been already sent so you can not sent again');
 
-        IF (PurchHeader."Buy-from Vendor No." <> '') THEN BEGIN
-            Vendor.GET(PurchHeader."Buy-from Vendor No.");
-            Vendor.TESTFIELD(Vendor."E-Mail");
+        IF (Cust."No." <> '') THEN BEGIN
+            Cust.GET(Cust."No.");
+            Cust.TESTFIELD(Cust."E-Mail");
             AttachementTempBlob.CreateOutStream(AttachementOutstream);
-            repRequestForQuote.SetTableView(PurchHeader);
-            //pkm  repRequestForQuote.SetDocNo(PurchHeader."No.");
+            repRequestForQuote.SetTableView(Cust);
+            //repRequestForQuote.SetDocNo(Cust."No.");
             repRequestForQuote.SaveAs('', ReportFormat::Pdf, AttachementOutstream);
             AttachementTempBlob.CreateInStream(AttachmentInstream);
             // Receipent.Add(Contact."E-Mail");
-            Receipent.Add(Vendor."E-Mail");
-            //  Receipent.Add('pradeep.maurya@robo-soft.net');
+            Receipent.Add(Cust."E-Mail");
+            Receipent.Add('nirmala.chavan@robo-soft.net');
             //  Receipent.Add('neha.borse@robo-soft.net');
             CLEAR(Subject);
             // IF PurchHeader."Requisition No." <> '' THEN
             //    Subject := 'IMR No.: ' + PurchHeader."Requisition No." + ' ';
-            Subject += 'RFQ No.: ' + PurchHeader."No.";
-            Body := 'Dear Vendor,' + '</br>';
+            Subject += 'RFQ No.: ' + Cust."No.";
+            Body := 'Dear Customer,' + '</br>';
             Body += '</br>';
             Body += 'Please find attached RFQ' + '</br>';
             Body += 'You are kindly requested to send Quotation' + '</br>';
@@ -47,7 +48,7 @@ codeunit 50100 "Email Integration"
             EmailMessage.AddAttachment('Report.Pdf', 'PDF', AttachmentInstream);
             if Email.Send(EmailMessage, Enum::"Email Scenario"::Default) then
                 MailSent := true;
-            // Message('%1', MailSent);
+            Message('Mail has been Sent');
             //if MailSent then
             // PurchaseInvoiceHeaderEdit.UpdatePurchaseInvoiceHeader(PurchHeader, MailSent, TODAY);
         end;

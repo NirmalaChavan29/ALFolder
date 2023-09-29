@@ -11,133 +11,6 @@
       <rd:DataSourceID>a7678385-2910-41a8-aaac-118ee787d400</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="Sell_to_Customer_Name">
-          <DataField>Sell_to_Customer_Name</DataField>
-        </Field>
-        <Field Name="Sell_to_Address">
-          <DataField>Sell_to_Address</DataField>
-        </Field>
-        <Field Name="Sell_to_City">
-          <DataField>Sell_to_City</DataField>
-        </Field>
-        <Field Name="Sell_to_County">
-          <DataField>Sell_to_County</DataField>
-        </Field>
-        <Field Name="Posting_Date">
-          <DataField>Posting_Date</DataField>
-        </Field>
-        <Field Name="No_">
-          <DataField>No_</DataField>
-        </Field>
-        <Field Name="Due_Date">
-          <DataField>Due_Date</DataField>
-        </Field>
-        <Field Name="Payment_Terms_Code">
-          <DataField>Payment_Terms_Code</DataField>
-        </Field>
-        <Field Name="compBank">
-          <DataField>compBank</DataField>
-        </Field>
-        <Field Name="compAccountNo">
-          <DataField>compAccountNo</DataField>
-        </Field>
-        <Field Name="compSwiftCode">
-          <DataField>compSwiftCode</DataField>
-        </Field>
-        <Field Name="compIBAN">
-          <DataField>compIBAN</DataField>
-        </Field>
-        <Field Name="CompName">
-          <DataField>CompName</DataField>
-        </Field>
-        <Field Name="compAddress">
-          <DataField>compAddress</DataField>
-        </Field>
-        <Field Name="compCity">
-          <DataField>compCity</DataField>
-        </Field>
-        <Field Name="CompVat">
-          <DataField>CompVat</DataField>
-        </Field>
-        <Field Name="compcountry">
-          <DataField>compcountry</DataField>
-        </Field>
-        <Field Name="compPicture">
-          <DataField>compPicture</DataField>
-        </Field>
-        <Field Name="compPhone">
-          <DataField>compPhone</DataField>
-        </Field>
-        <Field Name="Name">
-          <DataField>Name</DataField>
-        </Field>
-        <Field Name="BankAccountNo">
-          <DataField>BankAccountNo</DataField>
-        </Field>
-        <Field Name="BankSwift">
-          <DataField>BankSwift</DataField>
-        </Field>
-        <Field Name="BankIBAN">
-          <DataField>BankIBAN</DataField>
-        </Field>
-        <Field Name="BankCcurrency">
-          <DataField>BankCcurrency</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="No_1">
-          <DataField>No_1</DataField>
-        </Field>
-        <Field Name="Unit_of_Measure">
-          <DataField>Unit_of_Measure</DataField>
-        </Field>
-        <Field Name="Quantity">
-          <DataField>Quantity</DataField>
-        </Field>
-        <Field Name="QuantityFormat">
-          <DataField>QuantityFormat</DataField>
-        </Field>
-        <Field Name="Unit_Price">
-          <DataField>Unit_Price</DataField>
-        </Field>
-        <Field Name="Unit_PriceFormat">
-          <DataField>Unit_PriceFormat</DataField>
-        </Field>
-        <Field Name="VAT__">
-          <DataField>VAT__</DataField>
-        </Field>
-        <Field Name="VAT__Format">
-          <DataField>VAT__Format</DataField>
-        </Field>
-        <Field Name="Amount">
-          <DataField>Amount</DataField>
-        </Field>
-        <Field Name="AmountFormat">
-          <DataField>AmountFormat</DataField>
-        </Field>
-        <Field Name="Actamt">
-          <DataField>Actamt</DataField>
-        </Field>
-        <Field Name="ActamtFormat">
-          <DataField>ActamtFormat</DataField>
-        </Field>
-        <Field Name="vat">
-          <DataField>vat</DataField>
-        </Field>
-        <Field Name="vatFormat">
-          <DataField>vatFormat</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -2985,12 +2858,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -3030,4 +2897,131 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Sell_to_Customer_Name">
+          <DataField>Sell_to_Customer_Name</DataField>
+        </Field>
+        <Field Name="Sell_to_Address">
+          <DataField>Sell_to_Address</DataField>
+        </Field>
+        <Field Name="Sell_to_City">
+          <DataField>Sell_to_City</DataField>
+        </Field>
+        <Field Name="Sell_to_County">
+          <DataField>Sell_to_County</DataField>
+        </Field>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
+        </Field>
+        <Field Name="No_">
+          <DataField>No_</DataField>
+        </Field>
+        <Field Name="Due_Date">
+          <DataField>Due_Date</DataField>
+        </Field>
+        <Field Name="Payment_Terms_Code">
+          <DataField>Payment_Terms_Code</DataField>
+        </Field>
+        <Field Name="compBank">
+          <DataField>compBank</DataField>
+        </Field>
+        <Field Name="compAccountNo">
+          <DataField>compAccountNo</DataField>
+        </Field>
+        <Field Name="compSwiftCode">
+          <DataField>compSwiftCode</DataField>
+        </Field>
+        <Field Name="compIBAN">
+          <DataField>compIBAN</DataField>
+        </Field>
+        <Field Name="CompName">
+          <DataField>CompName</DataField>
+        </Field>
+        <Field Name="compAddress">
+          <DataField>compAddress</DataField>
+        </Field>
+        <Field Name="compCity">
+          <DataField>compCity</DataField>
+        </Field>
+        <Field Name="CompVat">
+          <DataField>CompVat</DataField>
+        </Field>
+        <Field Name="compcountry">
+          <DataField>compcountry</DataField>
+        </Field>
+        <Field Name="compPicture">
+          <DataField>compPicture</DataField>
+        </Field>
+        <Field Name="compPhone">
+          <DataField>compPhone</DataField>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="BankAccountNo">
+          <DataField>BankAccountNo</DataField>
+        </Field>
+        <Field Name="BankSwift">
+          <DataField>BankSwift</DataField>
+        </Field>
+        <Field Name="BankIBAN">
+          <DataField>BankIBAN</DataField>
+        </Field>
+        <Field Name="BankCcurrency">
+          <DataField>BankCcurrency</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="No_1">
+          <DataField>No_1</DataField>
+        </Field>
+        <Field Name="Unit_of_Measure">
+          <DataField>Unit_of_Measure</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="QuantityFormat">
+          <DataField>QuantityFormat</DataField>
+        </Field>
+        <Field Name="Unit_Price">
+          <DataField>Unit_Price</DataField>
+        </Field>
+        <Field Name="Unit_PriceFormat">
+          <DataField>Unit_PriceFormat</DataField>
+        </Field>
+        <Field Name="VAT__">
+          <DataField>VAT__</DataField>
+        </Field>
+        <Field Name="VAT__Format">
+          <DataField>VAT__Format</DataField>
+        </Field>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+        </Field>
+        <Field Name="AmountFormat">
+          <DataField>AmountFormat</DataField>
+        </Field>
+        <Field Name="Actamt">
+          <DataField>Actamt</DataField>
+        </Field>
+        <Field Name="ActamtFormat">
+          <DataField>ActamtFormat</DataField>
+        </Field>
+        <Field Name="vat">
+          <DataField>vat</DataField>
+        </Field>
+        <Field Name="vatFormat">
+          <DataField>vatFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "Sandbox",
+            "environmentName": "Testing1",
             "tenant": "1e20e268-c261-4df6-a67d-e857b837d4ad",
             "startupObjectId": 22,
             "startupObjectType": "Page",

@@ -2,7 +2,7 @@ pageextension 50105 SalesOrderListExt extends "Sales Order List"
 {
     actions
     {
-        addafter("P&osting")
+        addafter("Preview Posting")
         {
             action(PrintSelectedLayout)
             {

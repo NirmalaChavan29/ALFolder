@@ -81,6 +81,8 @@ report 50121 TaxInvoiceReport
     requestpage
     {
         SaveValues = true;
+        AboutTitle = 'New Teching Tips about report';
+        AboutText = 'Tis is some **text** and *italic*';
         layout
         {
             area(content)
